@@ -1,0 +1,28 @@
+.logo {
+  color: $accent-color;
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__color1 {
+    color: $primary-text-color;
+  }
+  &__color2 {
+    color: $bg-color-second;
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding: 24px 0px;
+ 
+}
+
+.footer__logo {
+  margin-right: 0px;
+  padding: 0px;
+
+}

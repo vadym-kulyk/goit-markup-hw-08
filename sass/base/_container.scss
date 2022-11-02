@@ -1,0 +1,30 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &--no-padding-top {
+    align-items: center;
+    padding-top: 0px;
+  }
+  &--other-background {
+    background-color: $bg-for-button;
+}
+}
