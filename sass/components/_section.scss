@@ -17,5 +17,9 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
     margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 }

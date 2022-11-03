@@ -1,0 +1,35 @@
+.menu-button {
+    
+    display: inline-flex;
+    align-items: center;
+
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+    transition: fill 250ms $timing-function; 
+
+    @media screen and (min-width:768px) {
+      display: none;
+     }          
+}
+
+.menu-btn-open:hover,
+.menu-btn-open:focus,
+.menu-btn-close:hover,
+.menu-btn-close:focus {
+ fill: $accent-color;
+}
+
+.menu-btn-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+	padding: 0;
+}
+
+.menu-btn-open {
+    top: 10px;
+    right: 15px;
+	padding: 0;
+}

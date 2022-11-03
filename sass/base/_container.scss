@@ -1,5 +1,71 @@
 .container {
-  width: 1200px;
+
+
+  
+    // box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    // flex-direction: column;
+    // display: flex;
+  
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+
+     .header & { 
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+    } 
+
+    .hero & {
+      text-align: center;
+      align-items: center;
+    }
+
+    .footer & {
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-around;
+      }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        // display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-around;
+        // justify-content: space-between;
+      }
+
+      @media screen and (min-width: 1200px) {
+        // justify-content: space-between;
+        align-items: baseline;
+    }
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  /*width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -27,4 +93,4 @@
   &--other-background {
     background-color: $bg-for-button;
 }
-}
+}*/

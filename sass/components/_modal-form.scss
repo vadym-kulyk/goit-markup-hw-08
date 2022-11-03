@@ -12,6 +12,9 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
     margin-bottom: 12px;
+    @media screen and (max-width: 1199px) {
+      line-height: 1.5;
+    }
   }
 
   &-icon {
@@ -85,6 +88,7 @@
     border: 2px solid rgba(33, 33, 33, 1);
     margin-right: 7px;
     border-radius: 2px;
+    
   }
 
   &-policy:checked + &-policy-txt::before {
@@ -119,6 +123,7 @@
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     transition: all 250ms $timing-function;
+   
   }
 
   .modal-policy-link {
@@ -127,6 +132,9 @@
     color: $accent-color;
     transition: all 250ms $timing-function;
     margin-left: 7px;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
   }
 
   .chek-policy-box {
