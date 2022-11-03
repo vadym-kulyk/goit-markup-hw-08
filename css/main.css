@@ -87,6 +87,17 @@ body {
   background-color: #f5f4fa;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section--no-padding-top {
+  align-items: center;
+  padding-top: 0px;
+}
+.section--other-background {
+  background-color: #f5f4fa;
+}
 .section__title {
   font-weight: 700;
   font-size: 36px;
