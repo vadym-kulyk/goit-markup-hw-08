@@ -1,27 +1,41 @@
 .overlay {
-  position: absolute;
-  color: $bg-color-second;
-  background-color: $accent-color;
-  padding: 63px 24px;
-  width: 100%;
-  top: 0;
-  left: 0;
-
-  transition: transform 250ms linear;
-  transform: translateY(100%);
-
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 0.9);
+    // padding: 63px 24px;
+    padding: 77px 24px;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+  
+    transition: transform 250ms linear;
+    transform: translateY(100%);
+  
   font-family: $main-font;
   font-size: 18px;
   line-height: 1.56;
 
-  .portfolio-card__link:hover &,
-  .portfolio-card__link:focus & {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+
+  .portfolio-card-link:hover &,
+  .portfolio-card-link:focus & {
     transform: translateY(0%);
     opacity: 1;
+  } 
   }
-}
+  
+  .portfolio-list-item-img-overlay {
+    position: relative;
+    overflow: hidden;
 
-.portfolio-overlay {
-  position: relative;
-  overflow: hidden;
-}
+    @media screen and (max-width: 320px) {
+      overflow: scroll;
+    }
+  }
+  
+  

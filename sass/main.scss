@@ -4,18 +4,19 @@
 @import "./base/common";
 @import "./base/container";
 
-@import "./components/section";
+@import "./components/title";
 @import "./components/logo";
 @import "./components/backdrop";
 @import "./components/modal-form";
 @import "./components/buttons";
-@import "./components/portfolio";
+@import "./components/card-set";
+@import "./components/menu-btn";
 
 
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/features";
+@import "./layout/features-work";
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";

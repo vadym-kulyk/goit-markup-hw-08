@@ -1,36 +1,126 @@
 .header {
- 
   position: relative;
-  background-color: $bg-color-second;;
-  height: 100%;
+    background-color: $title-secondary-color;
+    height: 100%;
+    @media screen and (min-width: 768px) {
+      height: 80px;
+    }
+    
+
+  & .logo {
   
+  padding: 16px 0;
+
   @media screen and (min-width: 768px) {
-    height: 80px;
+		padding: 26px 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 24px 0;
+
+	}
+}
+
+}
+
+
+
+.header-address {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-&__logo {
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
-padding: 16px 0;
 
-@media screen and (min-width: 768px) {
-  padding: 26px 0;
+
+  &-list {
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+      &-item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+  
+  }
+
+  &-link {
+   display: flex;
+   align-items: center;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+   
+   transition: color 250ms $timing-function;
+  
+
+   @media screen and (min-width: 1200px) {
+    padding: 32px 0px;
+   }
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  padding: 24px 0;
-
-}
-}
-
+.header-address-mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 20px;
+  }
 }
 
+.header-address-tel {
+  @media screen  and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 20px;
+  } 
+}
 
 
+
+.portfolio  {
+  @media screen and (min-width: 768px) {
+border-bottom: 1px solid #ECECEC;
+  }
+  
+ }
+
+.address {
+  font-style: normal;
+
+  &-links {
+    display: flex;
+  }
+
+  &-icon {
+    margin-right: 8px;
+    fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
+    
+  }
+
+}
 
 .mob-menu {
 
   position: fixed;
-  background-color: $bg-color-second;
+  background-color: $title-secondary-color;
   width: 100vw;
   height: 100vh;
 	top: 0;
@@ -87,7 +177,7 @@ padding: 48px 40px;
 	padding: 0;
 
 
-  color: $primary-text-color;
+  color: $title-primary-color;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.14;
@@ -223,19 +313,22 @@ padding: 48px 40px;
   }
 }
 
+.current {
+  color: $accent-color;
+}
 
-
-
-
-.header-navigation {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  display: flex;
-  align-items: center;
-  }
+.site-nav {
   
-.menu {
+  // align-items: center;
+@media screen and (max-width: 767px) {
+  display: none;
+}
+  
+}
+
+
+.nav-list {
+  // display: flex;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -243,137 +336,62 @@ padding: 48px 40px;
     display: flex;
     align-items: center;
   }
-  &__item:not(:first-child) {
+
+  .current {
+    color: $accent-color;
+  }
+
+  &-item:not(:first-child) {
     margin-left: 52px;
   }
-  &__item {
-    position: relative;
-    
-}
-&--current {
-  color: $accent-color;
-}
 
-//   background: $bg-color-second;
-//   border-bottom: 1px solid #ececec;
-
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//   }
-
-  
- 
-// }
-
-
-  &__link {
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    padding: 32px 0px;
-    transition: color 250ms $timing-function;
+  &-item {
     position: relative;
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent-color;
-    }
-    &--current {
-      color: $accent-color;
-    }
-    &--current::after {
+    & .current::after {
       display: block;
       position: absolute;
-      bottom: 0px;
+      bottom: -1px;
       left: 0;
-      content: '';
+      content: "";
       width: 100%;
       height: 4px;
       background-color: rgba(33, 150, 243, 1);
       border-radius: 2px;
     }
-  }
-}
-
-.header-address {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: inline-flex;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}
-
-
-.contacts {
-  @media screen and (min-width: 768px) and (max-width: 1199px) { 
-    &__item:not(:last-child) {
-      margin-bottom: 10px;
     }
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  &__item:not(:last-child) {
-  margin-right: 50px;
-}
-}
+ 
 
+&-link {
+color: $title-primary-color;
+display: flex;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+padding: 32px 0px;
+transition: color 250ms $timing-function;
 
-  &__link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color 250ms $timing-function, fill 250ms $timing-function;
-    
-    @media screen and (min-width: 1200px) {
-      padding: 32px 0px;
-     }
-
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent-color;
-    }
-  }
-
-  &__icon {
-    margin-right: 10px;
-    fill: $second-color;
-    transition: fill 250ms $timing-function;
-
-    .contacts__link:hover &,
-    .contacts__link:focus & {
-      fill: $accent-color;
-    }
+  &:hover,
+  &:focus{
+    color: $accent-color;
   }
 }
-
-.contacts__color {
-  color: $second-color;
 }
 
-.contacts__mail {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 20px;
-  }
+.contacts-color {
+  color: $primary-text-color;
 }
 
-.contacts__tel {
-  @media screen  and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 20px;
-  } 
-}
+//  .footer-list-link:hover,
+//  .footer-list-link:hover {
+//   color: $accent-color;
+// } 
+
+// .current {
+//   color: $accent-color;
+// }
+
+
+

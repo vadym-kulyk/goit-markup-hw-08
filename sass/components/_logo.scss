@@ -1,40 +1,43 @@
-.logo {
-  color: $accent-color;
-  text-decoration: none;
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-
-  @media screen and (max-width: 1199px) {
+ .logo {
+    font-family: $secondary-font;
+    font-weight: 700;
     font-size: 24px;
     line-height: 1.16;
-    margin-right: 88px;
+    // letter-spacing: 0.03em;
+    color: $accent-color;
+    text-decoration: none;
+  
+    
+    @media screen and (max-width: 1199px) {
+      font-size: 24px;
+      line-height: 1.16;
+      margin-right: 88px;
+    }
+  
+    @media screen and(min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+      margin-right: 93px;
+    }
+
+    &2-header {
+      color: #000000;
+
+      // @media screen and (min-width: 768px) {
+      //   margin-right: 88px;
+      // }
+  
+      // @media screen and (min-width: 1200px) {
+      //   margin-right: 93px;
+      // }
+
   }
 
-  @media screen and(min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.19;
-    margin-right: 93px;
+    &2-footer {
+    color: $title-secondary-color;
+    margin-bottom: 20px ;
   }
 
-  &__color1 {
-    color: $primary-text-color;
-  }
-  &__color2 {
-    color: $bg-color-second;
-  }
 }
-
-// .header__logo {
-//   margin-right: 93px;
-//   padding: 24px 0px;
+  
  
-// }
-
-// .footer__logo {
-//   margin-right: 0px;
-//   padding: 0px;}
-
-
