@@ -58,6 +58,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -229,6 +230,13 @@ body {
     font-size: 24px;
     line-height: 1.16;
     margin-right: 88px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -540,15 +548,22 @@ body {
 }
 @media screen and (min-width: 768px) {
   .portfolio-buttons {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio-buttons-list-point {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    margin-bottom: 0px;
   }
 }
 .portfolio-buttons-list-point:not(:last-child) {
   margin-right: 8px;
-}
-.portfolio-buttons-list-point:nth-last-child(n+3) {
-  margin-bottom: 15px;
 }
 
 .current-filter {
@@ -666,6 +681,7 @@ body {
 }
 
 .header {
+  border-bottom: 1px solid #ECECEC;
   position: relative;
   background-color: #fff;
   height: 100%;
@@ -997,6 +1013,11 @@ body {
   background-color: rgb(33, 150, 243);
   border-radius: 2px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-list__item .nav-list__link--current::after {
+    bottom: 4px;
+  }
+}
 .nav-list__link {
   color: #212121;
   display: flex;
@@ -1064,7 +1085,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 600px;
+    padding: 118px 200px;
     display: flex;
     align-items: center;
   }
@@ -1205,7 +1226,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .our-work {
-    display: flex;
+    display: block;
     text-align: center;
     padding-bottom: 94px;
   }
@@ -1230,19 +1251,18 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   height: 70px;
   color: #fff;
   color: rgb(255, 255, 255);
   background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px 82px;
   position: absolute;
   width: 100%;
   bottom: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .our-team {
@@ -1732,6 +1752,7 @@ body {
 @media screen and (max-width: 479px) {
   .modal-window {
     width: 98%;
+    padding: 50px;
   }
 }
 @media screen and (min-width: 480px) {

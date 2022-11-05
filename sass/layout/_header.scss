@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 1px solid #ECECEC;
   position: relative;
     background-color: $title-secondary-color;
     height: 100%;
@@ -367,6 +368,10 @@ font-weight: 700;
       height: 4px;
       background-color: rgba(33, 150, 243, 1);
       border-radius: 2px;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        bottom: +4px;
+        
+      }
     }
     }
  
