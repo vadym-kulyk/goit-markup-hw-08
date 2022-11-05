@@ -112,6 +112,110 @@ body {
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-no-padding-top {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-no-padding-top {
+    display: flex;
+    text-align: center;
+    padding-bottom: 94px;
+    padding-top: 0;
+  }
+}
+.section-no-padding-top .container {
+  flex-direction: column;
+}
+
+.section--other-background {
+  background-color: #F5F4FA;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section--other-background .container {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section--other-background-list--set li:nth-last-child(-n+4) {
+    flex-basis: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--other-background {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.our-work {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .our-work {
+    display: flex;
+    text-align: center;
+    padding-bottom: 94px;
+  }
+}
+.our-work .container {
+  flex-direction: column;
+}
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features-set li:nth-last-child(-n+4) {
+    flex-basis: 270px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-set li:nth-last-child(-n+4) {
+    flex-basis: 354px;
+  }
+}
+
+.our-team {
+  background-color: #F5F4FA;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.our-team .container {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team-list--set li:nth-last-child(-n+4) {
+    flex-basis: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .our-team-list--set li:nth-last-child(-n+4) {
+    flex-basis: 270px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
