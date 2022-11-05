@@ -7,9 +7,10 @@
     }
     
 
-  & .logo {
+  &__logo {
   
   padding: 16px 0;
+  
 
   @media screen and (min-width: 768px) {
 		padding: 26px 0;
@@ -39,22 +40,22 @@
 
 
 
-  &-list {
+  &__list {
     @media screen and (min-width: 768px) and (max-width: 1199px) { 
-      &-item:not(:last-child) {
+      &--item:not(:last-child) {
         margin-bottom: 10px;
       }
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-    &-item:not(:last-child) {
+    &--item:not(:last-child) {
     margin-right: 50px;
   }
 }
   
   }
 
-  &-link {
+  &__link {
    display: flex;
    align-items: center;
    font-weight: 500;
@@ -77,13 +78,15 @@
   }
 }
 
-.header-address-mail {
+.header-address__mail {
+  color: $primary-text-color;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 20px;
   }
 }
 
-.header-address-tel {
+.header-address__tel {
+  color: $primary-text-color;
   @media screen  and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 20px;
   } 
@@ -286,13 +289,19 @@ padding: 48px 40px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
  }
 
- &-item:nth-last-child(n+3) {
+ &-item:nth-last-child(n+1) {
   margin-bottom: 10px;
 }
 
  &-link {
   color: $accent-color;
   text-decoration: none;
+font-size:18px;
+
+line-height: 104%;
+
+font-weight: 700;
+
 
   &:hover,
   &:focus {
@@ -304,7 +313,7 @@ padding: 48px 40px;
 .mob-menu-bottom {
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin-bottom: auto;
-		// margin-top: auto;
+		
 	}
 
   &:hover,
@@ -319,7 +328,7 @@ padding: 48px 40px;
 
 .site-nav {
   
-  // align-items: center;
+  
 @media screen and (max-width: 767px) {
   display: none;
 }
@@ -328,7 +337,7 @@ padding: 48px 40px;
 
 
 .nav-list {
-  // display: flex;
+  
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -341,17 +350,17 @@ padding: 48px 40px;
     color: $accent-color;
   }
 
-  &-item:not(:first-child) {
+  &__item:not(:first-child) {
     margin-left: 52px;
   }
 
-  &-item {
+  &__item {
     position: relative;
 
-    & .current::after {
+    & .nav-list__link--current::after {
       display: block;
       position: absolute;
-      bottom: -1px;
+      bottom: 0px;
       left: 0;
       content: "";
       width: 100%;
@@ -362,7 +371,7 @@ padding: 48px 40px;
     }
  
 
-&-link {
+&__link {
 color: $title-primary-color;
 display: flex;
 font-weight: 500;
@@ -377,6 +386,9 @@ transition: color 250ms $timing-function;
   &:focus{
     color: $accent-color;
   }
+  &--current {
+    color: $accent-color;
+  }
 }
 }
 
@@ -384,14 +396,6 @@ transition: color 250ms $timing-function;
   color: $primary-text-color;
 }
 
-//  .footer-list-link:hover,
-//  .footer-list-link:hover {
-//   color: $accent-color;
-// } 
-
-// .current {
-//   color: $accent-color;
-// }
-
-
-
+.contacts-color2 {
+  color: $accent-color;
+}

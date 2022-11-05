@@ -1,39 +1,4 @@
-// .menu-button {
-//   display: inline-flex;
-//   padding: 0;
-//   margin-left: auto;
-//   border: none;
-//   background-color: transparent;
 
-//   transition: color 250ms $timing-function;
-
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//   }
-// }
-
-// .menu-button-close {
-//   fill: currentColor;
-
-//   .menu-button & {
-//     display: none;
-//   }
-//   .menu-button.is-open & {
-//     display: block;
-//   }
-// }
-
-// .menu-button-open {
-//   fill: currentColor;
-
-//   .menu-button & {
-//     display: block;
-//   }
-//   .menu-button.is-open & {
-//     display: none;
-//   }
-// }
 
 .buttons-list {
     display: flex;
